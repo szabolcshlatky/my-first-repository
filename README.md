@@ -1,7 +1,9 @@
-https://lms.greenfox.academy/enrollments
-https://myfirstapp.greenfox.academy/
-https://myfirstapp-syllabus.greenfox.academy/
-https://www.greenfoxacademy.com/my-first-app-coding-camp
+MyFirstApp # StayAtHome Coding Camp - GreenFox Academy
+
+-> https://lms.greenfox.academy/enrollments
+-> https://myfirstapp.greenfox.academy/
+-> https://myfirstapp-syllabus.greenfox.academy/
+-> https://www.greenfoxacademy.com/my-first-app-coding-camp
 
 The basic course workshops where I used jQuery can be found in the workshop folder.
 The only extra that I used SCSS to make it simplier.
