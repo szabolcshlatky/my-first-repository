@@ -1,0 +1,146 @@
+@use 'reset';
+
+#material-review-3 {
+ text-align: center;
+
+  h4, table, ul {
+    padding: 1em;
+  }
+
+ hr {
+  margin: 2em;
+ }
+
+ li {
+  list-style-type: none;
+ }
+
+  .syntax {
+    margin: auto;
+    padding: 5px 4px;
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+
+    figcaption {
+      background-color: #222;
+      color: #ccc;
+      font: italic smaller sans-serif;
+      padding: 3px 2px;
+      text-align: center;
+    }
+  }
+}
+
+#todo-list {
+
+  body {
+    background: #352f5b;
+
+    .container {
+      width: 50%;
+    }
+  
+    input[type=text],
+    input[type=text]:focus {
+      color: #fff;
+      border: none;
+      background: rgba(0,0,0,0.2);
+      width: 100%;
+    }
+  
+    .todos li {
+      background: #423a6f;
+      margin: .5em;
+      color: #fff;
+    }
+  
+    .delete {
+      cursor: pointer;
+    }
+  
+    .filtered {
+      display: none !important;
+    }
+  }
+}
+
+#my-first-app {
+  background: fixed url('https://www.technokrata.hu/uploads/2020/04/Green-Fox-Academy.jpg') no-repeat center center;
+  font-family: 'Comic Sans', cursive;
+
+  main {
+    width: 60%;
+    margin: 5vw auto;
+    padding: 1em;
+    box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.5);
+    background-color: #ffffff80;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    article {
+      display: flex;
+      align-items: center;
+      place-content: space-around;
+  
+      p {
+        cursor: pointer;
+        font-size: clamp(2rem, 5vw, 5rem);
+        margin: 1em;
+  
+        &:hover {
+          color: rgba(0,0,0,0.5);
+          transition: 0.5s;
+        }
+      }
+  
+      figure {
+        position: relative;
+        box-shadow: 3px 3px 5px 5px rgba(255,255,255,0.5);
+  
+        figcaption {
+          display: block;
+          width: 100%;
+          padding: 1em;
+          position: absolute;
+          bottom: 1%;
+          left: 0;
+          background-color: #00000080;
+          color: #fff;
+          
+          p {
+            font-size: clamp(1rem, 1.25vw, 1.25rem);
+          }
+        }
+      }
+    }
+
+    aside {
+      display: flex;
+      place-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      button {
+        width: 64px;
+        height: 64px;
+        margin: 0.1em;
+      }
+
+      .clicked {
+        position: relative;
+        outline: solid 5px lightblue;
+
+        &::before {
+          content: '🔼';
+          font-size: 1rem;
+          position: absolute;
+          top: -20%;
+          left: 33%;
+        }
+      }
+    }
+  }
+}
