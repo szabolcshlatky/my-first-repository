@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- <meta name="referrer" content="no-referrer-when-downgrade" /> -->
-  <!-- <meta name="robots" content="index, follow" /> -->
-  <!-- <meta name="googlebot" content="index, follow" /> -->
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
 
   <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
   <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
@@ -19,10 +19,6 @@
   <meta name="revised" content="Ictys, 2023/01/01" />
 
   <title>Workshop 1/8 - Bonyolult űrlap</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="../images/favicon.ico" />
@@ -39,39 +35,40 @@
         <legend>
           <label for="name">What is your name?</label>
         </legend>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" />
       </fieldset>
 
       <fieldset>
         <legend>What is your favorite color?</legend>
 
-        <input type="checkbox" name="red" id="red">
+        <input type="checkbox" name="red" id="red" />
         <label for="red">Red</label>
-        <br>
-        <input type="checkbox" name="green" id="green">
+        <br />
+        <input type="checkbox" name="green" id="green" />
         <label for="green">Green</label>
-        <br>
-        <input type="checkbox" name="blue" id="blue">
+        <br />
+        <input type="checkbox" name="blue" id="blue" />
         <label for="blue">Blue</label>
-        <br>
-        <input type="checkbox" name="other" id="other">
-        <label for="other">Other</label>
-        <input type="color" name="color" id="color">
+        <br />
+        <input type="checkbox" name="other" id="other" />
+        <label for="other">Other
+          <input type="color" name="color" id="color" />
+        </label>
       </fieldset>
 
       <fieldset>
         <legend>Would you like to become a developer?</legend>
 
-        <input type="radio" name="radio" id="yes">
+        <input type="radio" name="radio" id="yes" />
         <label for="yes">Yes</label>
-        <br>
-        <input type="radio" name="radio" id="ano">
+        <br />
+        <input type="radio" name="radio" id="ano" />
         <label for="ano">Ano</label>
-        <br>
-        <input type="radio" name="radio" id="igen">
+        <br />
+        <input type="radio" name="radio" id="igen" />
         <label for="igen">Igen</label>
-        <br>
-        <input type="radio" name="radio" id="chinese">
+        <br />
+        <input type="radio" name="radio" id="chinese" />
         <label for="chinese">是的</label>
       </fieldset>
 
@@ -82,20 +79,20 @@
         <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
       </fieldset>
 
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" />
     </fieldset>
 
   </form>
 
   <figure class="B__E--M">
-    <a href="#" title="Page's top" aria-label="Bookmark" target="_self">
+    <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
       <picture>
-        <img src="../images/copyright.png" alt="Copyright to Coding Sable" width="64px" height="64px" />
         <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+        <img src="../images/copyright.png" alt="Copyright to Coding Sable" width="64px" height="64px" />
       </picture>
-    </a>
+    </button>
   </figure>
-  
-  <noscript>The web-browser does NOT support JavaScript or it's switched off!</noscript>
+
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
 </body>
 </html>

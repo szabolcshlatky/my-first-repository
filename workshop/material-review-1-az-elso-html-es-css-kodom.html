@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="hu-HU" dir="ltr" id="material-review-1">
+
 <head>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- <meta name="referrer" content="no-referrer-when-downgrade" /> -->
-  <!-- <meta name="robots" content="index, follow" /> -->
-  <!-- <meta name="googlebot" content="index, follow" /> -->
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
 
   <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
   <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
@@ -26,6 +27,7 @@
   <link rel="apple-touch-icon" href="../images/favicon.ico" />
 
 </head>
+
 <body>
 
   <div>
@@ -43,13 +45,13 @@
     <label for="text">Neved:</label>
     <input type="text" name="text" id="text">
     <br>
-    <label for="password">Jelszavad:</label>    
+    <label for="password">Jelszavad:</label>
     <input type="password" name="password" id="password">
     <br>
     <label for="email">Emailed:</label>
     <input type="email" name="email" id="email">
     <br>
-    <button type="button">Regisztrál</button>
+    <button type="button" class="btn">Regisztrál</button>
   </form>
 
   <h3>Bevásárlási lista:</h3>
@@ -80,15 +82,16 @@
   <h6>Legkisebb</h6>
 
   <figure class="B__E--M">
-    <a href="#" title="Page's top" aria-label="Bookmark" target="_self">
+    <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
       <picture>
-        <img src="../images/copyright.png" alt="Copyright to Coding Sable" width="64px" height="64px" />
         <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+        <img src="../images/copyright.png" alt="Copyright to Coding Sable" width="64px" height="64px" />
       </picture>
-    </a>
+    </button>
   </figure>
 
-  <noscript>The web-browser does NOT support JavaScript or it's switched off!</noscript>
-  
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+
 </body>
+
 </html>

@@ -25,8 +25,8 @@ names[0] = `Szabolcs`;
 console.log(names.length);
 
 let object = {
-  colors: [`orange`, `magenta`, `red`, `brown`, `green`, `blue`, `teal`],
-  hasManyColors: true
+	colors: [`orange`, `magenta`, `red`, `brown`, `green`, `blue`, `teal`],
+	hasManyColors: true,
 };
 
 /* A JavaScript alapvető építőelemei */
@@ -34,49 +34,48 @@ let object = {
 let a = 7;
 
 if (a < 5) {
-  console.log(a / 2);
+	console.log(a / 2);
 } else if (a <= 5) {
-  console.log(a * 2);
+	console.log(a * 2);
 } else {
-  console.log(a - 6);
+	console.log(a - 6);
 }
 
 let bookCount = 10;
 
 for (let i = 0; i < bookCount; i++) {
-  console.log(i);
+	console.log(i);
 }
 
 for (let i = 1; i <= bookCount; i++) {
-  console.log(i);
+	console.log(i);
 }
 
 let count = 20;
 
 for (let i = 0; i <= count; i = i + 2) {
-  console.log(i);
+	console.log(i);
 }
 
-function printNumbersTill (n) {
-
-  for (let index = 1; index <= n; index++) {
-    console.log(index);
-  }
+function printNumbersTill(n) {
+	for (let index = 1; index <= n; index++) {
+		console.log(index);
+	}
 }
 
 printNumbersTill(20);
 printNumbersTill(15);
 
 function getGreetingTo(namen) {
-  console.log(`Hello ${namen}!`);
-} 
+	console.log(`Hello ${namen}!`);
+}
 
 getGreetingTo(`Mark`);
 
 let printValues = (array) => {
-  for (let i = 0; i < array.length; i++) {
-    console.log(array[i]);
-  }
+	for (let i = 0; i < array.length; i++) {
+		console.log(array[i]);
+	}
 };
 
 printValues([0, 3, 6, 7, 9]);
@@ -84,5 +83,5 @@ printValues([0, 3, 6, 7, 9]);
 let myNumbers = [10, 20, 30, 50, 12];
 
 myNumbers.forEach((number) => {
-  console.log(number);
+	console.log(number);
 });

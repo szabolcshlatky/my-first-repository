@@ -1,1061 +1,1051 @@
-@use 'reset';
+@use "reset";
 
 #material-review-1 {
+	div {
+		padding: 10px 30px;
+		border-width: 1px 2px 3px 4px;
+		border-style: solid dashed dotted double;
+		border-color: white grey lightgray black;
+		background-color: orange;
+		font-family: sans-serif;
 
-  div {
-    padding: 10px 30px;
-    border-width: 1px 2px 3px 4px;
-    border-style: solid dashed dotted double;
-    border-color: white grey lightgray black;
-    background-color: orange;
-    font-family: 'Montserrat', sans-serif;
+		h1 {
+			font-family: cursive;
+			font-size: 60px;
+			font-weight: 100;
+			text-align: center;
+		}
+	}
 
-    h1 {
+	h2 {
+		margin: 20px 300px 80px 300px;
+		font-family: serif;
+	}
 
-      font-family: 'Comic Sans MS';
-      font-size: 60px;
-      font-weight: 100;
-      text-align: center;
-    }
-  }
+	h3 {
+		margin-top: 10px;
+		margin-bottom: 50px;
+		margin-left: 30px;
+		margin-right: 100px;
+		padding: 40px;
+		background-color: blue;
+		color: lime;
+		font-family: sans-serif;
+	}
 
-  h2 {
-    margin: 20px 300px 80px 300px;
-    font-family: serif;
-  }
+	h4 {
+		height: 100px;
+		margin: 20px;
+	}
 
-  h3 {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 100px;
-    padding: 40px;
-    background-color: blue;
-    color: lime;
-    font-family: "Arial";
-  }
+	h5 {
+		color: #bc1288;
+	}
 
-  h4 {
-    height: 100px;
-    margin: 20px;
-  }
+	h6 {
+		color: rgb(230, 20, 150);
+	}
 
-  h5 {
-    color: #bc1288;
-  }
+	ul,
+	ol {
+		margin-left: 1em;
+		border-left: 2px solid gray;
+	}
 
-  h6 {
-    color: rgb(230, 20, 150);
-  }
+	li {
+		margin-left: 2em;
+		border-left: 2px solid gray;
+	}
 
-  ul, ol {
-    margin-left: 1em;
-    border-left: 2px solid gray;
-  }
+	.citrom {
+		background-color: yellow;
+	}
 
-  li {
-    margin-left: 2em;
-    border-left: 2px solid gray;
-  }
+	.nagybetus {
+		font-size: 40px;
+	}
 
-  .citrom {
-    background-color: yellow;
-  }
+	form {
+		width: 600px;
+		border: 2px solid white;
+		padding: 100px 60px 40px 20px;
 
-  .nagybetus {
-    font-size: 40px;
-  }
+		input {
+			background-color: red;
+		}
 
-  form {
-    width: 600px;
-    border: 2px solid white;
-    padding: 100px 60px 40px 20px;
-
-    input {
-      background-color: red;
-    }
-
-    #text {
-      background-color: pink;
-    }
-  }
+		#text {
+			background-color: pink;
+		}
+	}
 }
 
 #workshop-1-1 {
-  body {
-    padding: 10px;
+	body {
+		padding: 10px;
 
-    div {
-      display: inline-block;
-      margin: 10px;
-      padding: 5px;
-      border-radius: 10px;
-      border: 4px solid black;
-      background: yellow;
-    }
-    
-    .first {
-      border: 4px solid red;
-    }
-    
-    .second {
-      border: 4px solid #000000;
-    }
+		div {
+			display: inline-block;
+			margin: 10px;
+			padding: 5px;
+			border-radius: 10px;
+			border: 4px solid black;
+			background: yellow;
+		}
 
-    .lime {
-      div {
-        background-color: lime;
-      }
-    }
+		.first {
+			border: 4px solid red;
+		}
 
-    .white {
-      div {
-        background-color: lime;
-      }
+		.second {
+			border: 4px solid #000000;
+		}
 
-      .second {
-        background-color: white;
-      }
-    }
+		.lime {
+			div {
+				background-color: lime;
+			}
+		}
 
-    .blue {
-      div {
-        background-color: lime;
-      }
+		.white {
+			div {
+				background-color: lime;
+			}
 
-      .second {
-        background-color: white;
-      }
+			.second {
+				background-color: white;
+			}
+		}
 
-      .fourth {
-        border-color: blue;
-      }
-    }
+		.blue {
+			div {
+				background-color: lime;
+			}
 
-    .purple {
-      div {
-        background-color: lime;
-      }
+			.second {
+				background-color: white;
+			}
 
-      .second {
-        background-color: white;
-      }
+			.fourth {
+				border-color: blue;
+			}
+		}
 
-      .fourth {
-        border-color: blue;
-      }
+		.purple {
+			div {
+				background-color: lime;
+			}
 
-      .fifth {
-        background-color: yellow;
-        border-color: purple;
-      }
-    }
-  }
+			.second {
+				background-color: white;
+			}
+
+			.fourth {
+				border-color: blue;
+			}
+
+			.fifth {
+				background-color: yellow;
+				border-color: purple;
+			}
+		}
+	}
 }
 
 #workshop-1-2 {
-  h1 {
-    padding: 20px;
-    background-color: red;
-  }
+	h1 {
+		padding: 20px;
+		background-color: red;
+	}
 
-  h2 {
-    margin: 20px;
-    background-color: orange;
-  }
+	h2 {
+		margin: 20px;
+		background-color: orange;
+	}
 }
 
 #workshop-1-3 {
-
-  h1 {
-    width: 300px;
-    margin: 10px;
-    border: 5px solid #7DCE94;
-    padding: 10px 20px 30px 40px;
-    background-color: #0D91A1;
-    color: #015668;
-    font-family: 'Baloo Tammudu 2', cursive;
-  }
+	h1 {
+		width: 300px;
+		margin: 10px;
+		border: 5px solid #7dce94;
+		padding: 10px 20px 30px 40px;
+		background-color: #0d91a1;
+		color: #015668;
+		font-family: cursive;
+	}
 }
 
 #workshop-1-4 {
-  main {
-    width: 300px;
-    margin: 10px;
-    border: 5px solid #4285f4;
-    color: white;
-    font-family: 'Baloo Thambi 2', cursive;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+	main {
+		width: 300px;
+		margin: 10px;
+		border: 5px solid #4285f4;
+		color: white;
+		font-family: cursive;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
 
-    p {
-      padding: 10px 20px;
-    }
+		p {
+			padding: 10px 20px;
+		}
 
-    .north {
-      background-color: #E67676;
-    }
+		.north {
+			background-color: #e67676;
+		}
 
-    .east {
-      background-color: #F2F062;
-    }
+		.east {
+			background-color: #f2f062;
+		}
 
-    .south {
-      background-color: #A9E6E6;
-    }
+		.south {
+			background-color: #a9e6e6;
+		}
 
-    .west {
-      background-color: #7692E4;
-    }
-  }
+		.west {
+			background-color: #7692e4;
+		}
+	}
 }
 
 #workshop-1-5 {
+	section {
+		width: 300px;
+		margin: 10px;
+		border: 5px solid #4285f4;
+		color: white;
+		font-family: cursive;
+		font-size: 24px;
+		text-align: center;
 
-  section {
-    width: 300px;
-    margin: 10px;
-    border: 5px solid #4285f4;
-    color: white;
-    font-family: 'Baloo Thambi 2', cursive;
-    font-size: 24px;
-    text-align: center;
+		p {
+			padding: 10px 20px;
+		}
 
-    p {
-      padding: 10px 20px;
-    }
+		.north {
+			background-color: #e67676;
+		}
 
-    .north {
-      background-color: #E67676;
-    }
-
-    .south {
-      background-color: #A9E6E6;
-    }
-  }
+		.south {
+			background-color: #a9e6e6;
+		}
+	}
 }
 
 #workshop-1-6 {
-  font-family: serif;
+	font-family: serif;
 
-  h1 {
-    color: red;
-  }
+	h1 {
+		color: red;
+	}
 
-  h2 {
-    color: purple;
-  }
+	h2 {
+		color: purple;
+	}
 
-  ul, ol {
-    margin-left: 1em;
-  }
+	ul,
+	ol {
+		margin-left: 1em;
+	}
 
-  li {
-    margin-left: 2em;
-  }
+	li {
+		margin-left: 2em;
+	}
 
-  .pink {
-    color: violet;
-  }
+	.pink {
+		color: violet;
+	}
 }
 
 #workshop-1-7 {
-  font-family: 'Baloo 2', cursive;
-  font-size: 24px;
+	font-family: cursive;
+	font-size: 24px;
 
-  form {
-    margin: 10px;
-  }
+	form {
+		margin: 10px;
+	}
 
-  input, label {
-    display: block;
-  }
+	input,
+	label {
+		display: block;
+	}
 
-  input {
-    margin-bottom: 20px;
-    border: 2px limegreen solid;
-    border-radius: 5px;
-    padding: 10px 20px;
-  }
+	input {
+		margin-bottom: 20px;
+		border: 2px limegreen solid;
+		border-radius: 5px;
+		padding: 10px 20px;
+	}
 
-  button {
-    border: none;
-    border-radius: 50px;
-    padding: 20px;
-    background-color: limegreen;
-    font-family: 'Baloo 2', cursive;
-    font-size: 24px;
-  }
+	.btn {
+		border: none;
+		border-radius: 50px;
+		padding: 20px;
+		background-color: limegreen;
+		font-family: cursive;
+		font-size: 24px;
+	}
 }
 
 #workshop-1-8 {
-  font-family: 'Baloo 2', cursive;
+	font-family: cursive;
 
-  form {
-    width: 50%;
-    margin: 0 auto;
+	form {
+		width: 50%;
+		margin: 0 auto;
 
-    fieldset {
-      padding: 5px 10px;
-    }
-  }
+		fieldset {
+			padding: 5px 10px;
+		}
+	}
 }
 
 #material-review-2 {
+	.container {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: sans-serif;
 
-  .container {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Open Sans', sans-serif;
+		.newsletter {
+			position: relative;
+			border: solid thin #cfcfcf;
+			border-radius: 3px;
+			padding: 10px;
+			padding-bottom: 20px;
+			color: gray;
 
-    .newsletter {
-      position: relative;
-      border: solid thin #cfcfcf;
-      border-radius: 3px;
-      padding: 10px;
-      padding-bottom: 20px;
-      color: gray;
+			h3 {
+				margin-top: 0;
+			}
 
-      h3 {
-        margin-top: 0;
-      }
+			p {
+				margin: 10px 0;
+			}
 
-      p {
-        margin: 10px 0; 
-      }
+			#email {
+				display: block;
+				width: 100%;
+				height: 30px;
+				margin-bottom: 4px;
+				border: 1px solid #cfcfcf;
+				border-radius: 3px;
+			}
 
-      #email {
-        display: block;
-        width: 100%;
-        height: 30px;
-        margin-bottom: 4px;
-        border: 1px solid #cfcfcf;
-        border-radius: 3px;
-      }
+			#checkbox {
+				position: relative;
+				top: 1px;
+			}
 
-      #checkbox {
-        position: relative;
-        top: 1px;
-      }
+			.btn {
+				display: block;
+				width: 100%;
+				height: 30px;
+				margin-bottom: 10px;
+				border: none;
+				background-color: #3cb878;
+				color: white;
+			}
 
-      button {
-        display: block;
-        width: 100%;
-        height: 30px;
-        margin-bottom: 10px;
-        border: none;
-        background-color: #3cb878;
-        color: white;
-      }
+			#closex {
+				position: absolute;
+				top: 0;
+				right: 4px;
+				cursor: pointer;
+			}
+		}
 
-      #closex {
-        position: absolute;
-        top: 0;
-        right: 4px;
-        cursor: pointer;
-      }
-    }
+		#questionmark {
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 7px 2px grey;
+			background-color: #3cb878;
+			color: white;
+			font-size: 70px;
+			text-align: center;
+			cursor: help;
+		}
 
-    #questionmark {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      box-shadow: 0px 0px 7px 2px grey;
-      background-color: #3cb878;
-      color: white;
-      font-size: 70px;
-      text-align: center;
-      cursor: help;
-    }
+		#card-holder {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-end;
+			align-content: flex;
 
-    #card-holder {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: flex-end;
-      align-content: flex;
+			.card {
+				width: 180px;
+				margin: 20px 0;
+				padding: 20px 0;
+				box-shadow: 0px 0px 7px 2px grey;
+				background-color: #3cb878;
+				color: white;
+				text-align: center;
 
-      .card {
-        width: 180px;
-        margin: 20px 0;
-        padding: 20px 0;
-        box-shadow: 0px 0px 7px 2px grey;
-        background-color: #3cb878;
-        color: white;
-        text-align: center;
-
-        h3 {
-          margin: 0;
-        }
-      }
-    }
-  }
+				h3 {
+					margin: 0;
+				}
+			}
+		}
+	}
 }
 
 #workshop-2-1 {
+	a {
+		display: block;
+		margin: 10px;
+		color: green;
+		font-family: sans-serif;
 
-  a {
-    display: block;
-    margin: 10px;
-    color: green;
-    font-family: 'Sen', sans-serif;
-
-    &:hover {
-      color: lime;
-      text-decoration: none;
-    } 
-  }
+		&:hover {
+			color: lime;
+			text-decoration: none;
+		}
+	}
 }
 
 #workshop-2-2 {
-  text-align: center;
-  
-  img {
-    width: 300px;
-    margin: 50px;
+	text-align: center;
 
-    &:hover {
-      width: 400px;
-      margin: 0;
-    }
-  }
+	img {
+		width: 300px;
+		margin: 50px;
+
+		&:hover {
+			width: 400px;
+			margin: 0;
+		}
+	}
 }
 
 #workshop-2-3 {
-  font-family: 'Sen', sans-serif;
+	font-family: sans-serif;
 
-  main {
-    display: flex;
+	main {
+		display: flex;
 
-    section {
-      width: 200px;
-      text-align: center;
+		section {
+			width: 200px;
+			text-align: center;
 
-      img {
-        width: 150px;
-      }
+			img {
+				width: 150px;
+			}
 
-      a {
-        display: block;
-      }
-    }
-  }
-
-
-
+			a {
+				display: block;
+			}
+		}
+	}
 }
 
 #workshop-2-4 {
-  .item {
-    width: 150px;
-    height: 150px;
-  }
+	.item {
+		width: 150px;
+		height: 150px;
+	}
 
-  .green {
-    background-color: #51d400;
-  }
+	.green {
+		background-color: #51d400;
+	}
 
-  .yellow {
-    background-color: #ffd62a;
-  }
+	.yellow {
+		background-color: #ffd62a;
+	}
 
-  .purple {
-    background-color: #b02afe;
-  }
+	.purple {
+		background-color: #b02afe;
+	}
 
-  .flex {
-    display: flex;
-    margin: 20px;
-  }
+	.flex {
+		display: flex;
+		margin: 20px;
+	}
 
-  .box__2 {
-    flex-direction: row-reverse;
-  }
+	.box__2 {
+		flex-direction: row-reverse;
+	}
 
-  .box__3 {
-    flex-flow: column-reverse;
-  }
+	.box__3 {
+		flex-flow: column-reverse;
+	}
 
-  .box__4 {
-    flex-wrap: wrap;
-    width: 300px;
-  }
+	.box__4 {
+		flex-wrap: wrap;
+		width: 300px;
+	}
 
-  .box__5 {
-    flex-flow: row-reverse wrap;
-    width: 300px;
-  }
+	.box__5 {
+		flex-flow: row-reverse wrap;
+		width: 300px;
+	}
 }
 
 #workshop-2-5 {
+	.flex {
+		display: flex;
+		width: 400px;
+		height: 150px;
+		margin: 5px;
+		background-color: #ffd62a;
 
-  .flex {
-    display: flex;
-    width: 400px;
-    height: 150px;
-    margin: 5px;
-    background-color: #ffd62a;
+		.item {
+			width: 50px;
+			height: 50px;
+			margin: 0;
+			margin-right: 5px;
+			background-color: #b02afe;
+			list-style-type: none;
+		}
+	}
 
-    .item {
-      width: 50px;
-      height: 50px;
-      margin: 0;
-      margin-right: 5px;
-      background-color: #b02afe;
-      list-style-type: none;
-    }
-  }
+	.box__2 {
+		align-items: center;
+	}
 
-  .box__2 {
-    align-items: center;
-  }
+	.box__3 {
+		justify-content: space-between;
+		align-items: center;
 
-  .box__3 {
-    justify-content: space-between;
-    align-items: center;
+		.item {
+			margin: 0;
+		}
+	}
 
-    .item {
-      margin: 0;
-    }
-  }
+	.box__4 {
+		flex-direction: row-reverse;
+		align-items: flex-end;
 
-  .box__4 {
-    flex-direction: row-reverse;
-    align-items: flex-end;
-
-    .item {
-      margin: 0;
-      margin-left: 5px;
-    }
-  }
+		.item {
+			margin: 0;
+			margin-left: 5px;
+		}
+	}
 }
 
 #workshop-2-6 {
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: purple;
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		background-color: purple;
 
-    button {
-      display: block;
-      min-height: 30px;
-      background-color: cyan;
-      margin-left: 20px;
-      margin-right: 20px;
-      cursor: pointer;
-    }
+		.btn {
+			display: block;
+			min-height: 30px;
+			background-color: cyan;
+			margin-left: 20px;
+			margin-right: 20px;
+			cursor: pointer;
+		}
 
-    .large {
-      width: 60px;
-    }
-  }
+		.large {
+			width: 60px;
+		}
+	}
 
-  main {
-    display: flex;
-    height: 500px;
+	main {
+		display: flex;
+		height: 500px;
 
-    article {
-      flex-grow: 4;
-      background-color: yellow;
-    }
+		article {
+			flex-grow: 4;
+			background-color: yellow;
+		}
 
-    aside {
-      flex-grow: 1;
-      background-color: lime;
-    }
-  }
+		aside {
+			flex-grow: 1;
+			background-color: lime;
+		}
+	}
 }
 
 #workshop-2-7 {
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    border-bottom: 10px white solid;
-    padding-left: 100px;
-    background-color: purple;
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		height: 70px;
+		border-bottom: 10px white solid;
+		padding-left: 100px;
+		background-color: purple;
 
-    button {
-      display: block;
-      width: 50px;
-      min-height: 30px;
-      background-color: cyan;
-      margin-right: 10px;
-      cursor: pointer;
-    }
+		.btn {
+			display: block;
+			width: 50px;
+			min-height: 30px;
+			background-color: cyan;
+			margin-right: 10px;
+			cursor: pointer;
+		}
 
-    .large {
-      width: 100px;
-    }
-  }
+		.large {
+			width: 100px;
+		}
+	}
 
-  main {
-    display: flex;
-    height: 500px;
-    margin: 0 100px;
+	main {
+		display: flex;
+		height: 500px;
+		margin: 0 100px;
 
-    article {
-      flex-grow: 4;
-      background-color: yellow;
-    }
+		article {
+			flex-grow: 4;
+			background-color: yellow;
+		}
 
-    aside {
-      flex-grow: 1;
-      background-color: lime;
-    }
-  }
+		aside {
+			flex-grow: 1;
+			background-color: lime;
+		}
+	}
 
-  footer {
-    margin: 10px 100px;
-    height: 80px;
-    background-color: lightgray;
-  }
+	footer {
+		margin: 10px 100px;
+		height: 80px;
+		background-color: lightgray;
+	}
 }
 
 #workshop-2-8 {
+	div {
+		width: 80%;
+		margin: 0 auto;
+	}
 
-  div {
-    width: 80%;
-    margin: 0 auto;
-  }
+	header {
+		height: 20vh;
+		background-color: aqua;
+	}
 
-  header {
-    height: 20vh;
-    background-color: aqua;
-  }
+	main {
+		display: flex;
+		height: 70vh;
 
-  main {
-    display: flex;
-    height: 70vh;
+		section {
+			flex-grow: 1;
+			background-color: orange;
+		}
 
-    section {
-      flex-grow: 1;
-      background-color: orange;
-    }
+		article {
+			position: relative;
+			flex-grow: 3;
+			margin: 0 50px;
+			background-color: red;
 
-    article {
-      position: relative;
-      flex-grow: 3;
-      margin: 0 50px;
-      background-color: red;
+			address {
+				position: absolute;
+				right: 5%;
+				bottom: 5%;
+				width: 50px;
+				height: 50px;
+				background-color: black;
+			}
+		}
 
-      address {
-        position: absolute;
-        right: 5%;
-        bottom: 5%;
-        width: 50px;
-        height: 50px;
-        background-color: black;
-      }
-    }
+		aside {
+			flex-grow: 1;
+			background-color: purple;
+		}
+	}
 
-    aside {
-      flex-grow: 1;
-      background-color: purple;
-    }
-  }
-
-  footer {
-    height: 10vh;
-    background-color: blue;
-  }
+	footer {
+		height: 10vh;
+		background-color: blue;
+	}
 }
 
 #workshop-3-1 {
-  color: #222;
-  font-family: 'Josefin Sans', sans-serif;  
+	color: #222;
+	font-family: sans-serif;
 
-  header {
-    position: relative;
-    width: 90%;
-    height: 60vh;
-    margin: 0 auto;
-    background: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png') no-repeat center center;
-    background-size: cover;
+	header {
+		position: relative;
+		width: 90%;
+		height: 60vh;
+		margin: 0 auto;
+		background: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png")
+			no-repeat center center;
+		background-size: cover;
 
-    h1 {
-      position: absolute;
-      left: 20%;
-      bottom: 10%;
-      color: #222;
-      font: normal normal 5rem/1 'Abril Fatface', cursive;
+		h1 {
+			position: absolute;
+			left: 20%;
+			bottom: 10%;
+			color: #222;
+			font: normal normal 5rem/1 cursive;
 
-      span {
-        font-size: 2.5rem;
-      }
-    }
-  }
+			span {
+				font-size: 2.5rem;
+			}
+		}
+	}
 
-  main {
-    width: 60%;
-    margin: 50px auto;
+	main {
+		width: 60%;
+		margin: 50px auto;
 
-    .intro {
-      font-size: 1.25rem;
-    }
+		.intro {
+			font-size: 1.25rem;
+		}
 
-    ul {
-      margin: 1em 0;
-      margin-left: 1em;
-    }
+		ul {
+			margin: 1em 0;
+			margin-left: 1em;
+		}
 
-    li {
-      margin-left: 2em;
-      list-style: square;
-    }
+		li {
+			margin-left: 2em;
+			list-style: square;
+		}
 
-    section {
-      padding: 2em;
+		section {
+			padding: 2em;
 
-      h2 {
-        text-transform: uppercase;
-      }
+			h2 {
+				text-transform: uppercase;
+			}
 
-      article {
-        margin: 2em 0;
+			article {
+				margin: 2em 0;
 
-        h3 {
-          line-height: 1;
+				h3 {
+					line-height: 1;
 
-          em {
-            font-family: 'Merriweather', serif;
-            font-size: 15px;
-            font-style: italic;
-          }
-        }
-      }
-    }
+					em {
+						font-family: serif;
+						font-size: 15px;
+						font-style: italic;
+					}
+				}
+			}
+		}
 
-    blockquote {
-      position: relative;
-      padding: 1em;
-      padding-right: 2em;
-      background-color: #222;
-      color: #fff;
-      font-family: 'Abril Fatface', cursive;
-      font-size: 3rem;
-  
-      &::before {
-        content: '”';
-        position: absolute;
-        top: -25px;
-        left: 1%;
-        color: #fff;
-        font-size: 5rem;
-      }
-    }
+		blockquote {
+			position: relative;
+			padding: 1em;
+			padding-right: 2em;
+			background-color: #222;
+			color: #fff;
+			font-family: cursive;
+			font-size: 3rem;
 
-    hr {
-      border: 2px solid #222;
-    }
-  }
+			&::before {
+				content: "”";
+				position: absolute;
+				top: -25px;
+				left: 1%;
+				color: #fff;
+				font-size: 5rem;
+			}
+		}
+
+		hr {
+			border: 2px solid #222;
+		}
+	}
 }
 
 #workshop-3-2 {
-  color: #222;
-  font-family: 'Josefin Sans', sans-serif;  
+	color: #222;
+	font-family: sans-serif;
 
-  header {
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    width: 100%;
+	header {
+		position: relative;
+		display: flex;
+		flex-flow: column;
+		width: 100%;
 
-    nav {
-      width: 100%;
-      position: fixed;
-      background-color: #222;
-      z-index: 2;
-  
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-  
-        li {
-          margin: 1em;
-          list-style-type: none;
-  
-          a {
-            color: #fff;
-            font-size: 1.25rem;
-            text-decoration: none;
-          }
-        }
-      }
-    }
+		nav {
+			width: 100%;
+			position: fixed;
+			background-color: #222;
+			z-index: 2;
 
-    .container {
-      display: flex;
-      margin-top: 50px;
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
 
+				li {
+					margin: 1em;
+					list-style-type: none;
 
-      figure {
-        flex-grow: 1;
-        background-image: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 60vh;
-        width: 100%;
-      }
+					a {
+						color: #fff;
+						font-size: 1.25rem;
+						text-decoration: none;
+					}
+				}
+			}
+		}
 
-      .intro {
-        flex-grow: 2;
-        padding: 2em;
-        font-size: 1.25rem;
-  
-        ul {
-          margin: 1em 0;
-          margin-left: 1em;
-        }
-      
-        li {
-          margin-left: 2em;
-          list-style: square;
-        }
-      }
-    }
+		.container {
+			display: flex;
+			margin-top: 50px;
 
-      h1 {
-        position: absolute;
-        top: 45vh;
-        left: 10%;
-        color: #222;
-        font: normal normal 5rem/1 'Abril Fatface', cursive;
-  
-        span {
-          font-size: 2.5rem;
-        }
-      }
-    }
+			figure {
+				flex-grow: 1;
+				background-image: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 60vh;
+				width: 100%;
+			}
 
-  main {
-    width: 60%;
-    margin: 50px auto;
+			.intro {
+				flex-grow: 2;
+				padding: 2em;
+				font-size: 1.25rem;
 
-    ul {
-      margin: 1em 0;
-      margin-left: 1em;
-    }
+				ul {
+					margin: 1em 0;
+					margin-left: 1em;
+				}
 
-    li {
-      margin-left: 2em;
-      list-style: square;
-    }
+				li {
+					margin-left: 2em;
+					list-style: square;
+				}
+			}
+		}
 
-    section {
-      padding: 2em;
+		h1 {
+			position: absolute;
+			top: 45vh;
+			left: 10%;
+			color: #222;
+			font: normal normal 5rem/1 cursive;
 
-      h2 {
-        text-transform: uppercase;
-      }
+			span {
+				font-size: 2.5rem;
+			}
+		}
+	}
 
-      article {
-        margin: 2em 0;
+	main {
+		width: 60%;
+		margin: 50px auto;
 
-        h3 {
-          line-height: 1;
+		ul {
+			margin: 1em 0;
+			margin-left: 1em;
+		}
 
-          em {
-            font-family: 'Merriweather', serif;
-            font-size: 15px;
-            font-style: italic;
-          }
-        }
-      }
-    }
+		li {
+			margin-left: 2em;
+			list-style: square;
+		}
 
-    blockquote {
-      position: relative;
-      padding: 1em;
-      padding-right: 2em;
-      background-color: #222;
-      color: #fff;
-      font-family: 'Abril Fatface', cursive;
-      font-size: 3rem;
-  
-      &::before {
-        content: '”';
-        position: absolute;
-        top: -25px;
-        left: 1%;
-        color: #fff;
-        font-size: 5rem;
-      }
-    }
+		section {
+			padding: 2em;
 
-    hr {
-      border: 2px solid #222;
-    }
-  }
+			h2 {
+				text-transform: uppercase;
+			}
+
+			article {
+				margin: 2em 0;
+
+				h3 {
+					line-height: 1;
+
+					em {
+						font-family: serif;
+						font-size: 15px;
+						font-style: italic;
+					}
+				}
+			}
+		}
+
+		blockquote {
+			position: relative;
+			padding: 1em;
+			padding-right: 2em;
+			background-color: #222;
+			color: #fff;
+			font-family: cursive;
+			font-size: 3rem;
+
+			&::before {
+				content: "”";
+				position: absolute;
+				top: -25px;
+				left: 1%;
+				color: #fff;
+				font-size: 5rem;
+			}
+		}
+
+		hr {
+			border: 2px solid #222;
+		}
+	}
 }
 
 #workshop-4-1 {
-  .big {
-    color: blue;
-  }
+	.big {
+		color: blue;
+	}
 
-  .container {
-    div {
-      font-weight: bolder;
-      border: 1px solid green;
-    }
-  }
+	.container {
+		div {
+			font-weight: bolder;
+			border: 1px solid green;
+		}
+	}
 
-  .b329 {
-    font-weight: bolder;
-  }
+	.b329 {
+		font-weight: bolder;
+	}
 
-  p {
-    background-color: yellow;
-  }
+	p {
+		background-color: yellow;
+	}
 }
 
 #workshop-4-2 {
-  p {
-    border: 1px solid black;
+	p {
+		border: 1px solid black;
 
-    &:nth-of-type(1):hover {
-      background-color: red;
-    }
-    &:nth-of-type(2):hover {
-      background-color: orange;
-    }
-    &:nth-of-type(3):hover {
-      background-color: yellow;
-    }
-    &:nth-of-type(4):hover {
-      background-color: green;
-    }
-    &:nth-of-type(5):hover {
-      background-color: blue;
-    }
-    &:nth-of-type(6):hover {
-      background-color: indigo;
-    }
-    &:nth-of-type(7):hover {
-      background-color: violet;
-    }
-  }
+		&:nth-of-type(1):hover {
+			background-color: red;
+		}
+		&:nth-of-type(2):hover {
+			background-color: orange;
+		}
+		&:nth-of-type(3):hover {
+			background-color: yellow;
+		}
+		&:nth-of-type(4):hover {
+			background-color: green;
+		}
+		&:nth-of-type(5):hover {
+			background-color: blue;
+		}
+		&:nth-of-type(6):hover {
+			background-color: indigo;
+		}
+		&:nth-of-type(7):hover {
+			background-color: violet;
+		}
+	}
 }
 
 #workshop-4-3 {
-  section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 30px;
+	section {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		align-content: center;
+		margin: 30px;
+		border: 1px solid blue;
+		padding: 30px;
 
-    div {
-      width: 100px;
-      height: 100px;
-    }
-  }
+		div {
+			width: 100px;
+			height: 100px;
+		}
+	}
 
-  .flexbox__1 {
-    div {
-      background-color: blue;
-    }
-  }
+	.flexbox__1 {
+		div {
+			background-color: blue;
+		}
+	}
 
-  .flexbox__2 {
-    background-color: orange;
+	.flexbox__2 {
+		background-color: orange;
 
-    div {
-      background-color: purple;
-    }
-  }
+		div {
+			background-color: purple;
+		}
+	}
 }
 
 #material-review-4 {
+	.kontener {
+		display: flex;
 
-  .kontener {
-    display: flex;
+		.doboz {
+			width: 100px;
+			height: 100px;
+		}
+	}
 
-    .doboz {
-      width: 100px;
-      height: 100px;
-    }
-  }
+	ul {
+		margin-left: 1em;
 
-  ul {
-    margin-left: 1em;
+		li {
+			margin-left: 2em;
+			background-color: lightblue;
+		}
 
-    li {
-      margin-left: 2em;
-      background-color: lightblue;
-    }
- 
-   .sarga {
-      background-color: yellow;
-    }
-  }
+		.sarga {
+			background-color: yellow;
+		}
+	}
 }
 
 #workshop-5-5 {
+	header {
+		h1 {
+			width: 300px;
+			margin: 10px;
+			border: 5px solid #7dce94;
+			padding: 10px 20px 30px 40px;
+			background-color: #0d91a1;
+			color: #015668;
+			font-family: cursive;
+		}
+	}
 
-  header {
-    h1 {
-      width: 300px;
-      margin: 10px;
-      border: 5px solid #7DCE94;
-      padding: 10px 20px 30px 40px;
-      background-color: #0D91A1;
-      color: #015668;
-      font-family: 'Baloo Tammudu 2', cursive;
-    }
-  }
+	main {
+		width: 300px;
+		margin: 10px;
+		border: 5px solid #4285f4;
+		color: white;
+		font-family: cursive;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
 
-  main {
-    width: 300px;
-    margin: 10px;
-    border: 5px solid #4285f4;
-    color: white;
-    font-family: 'Baloo Thambi 2', cursive;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+		p {
+			padding: 10px 20px;
+		}
 
-    p {
-      padding: 10px 20px;
-    }
+		.north {
+			background-color: #e67676;
+		}
 
-    .north {
-      background-color: #E67676;
-    }
+		.east {
+			background-color: #f2f062;
+		}
 
-    .east {
-      background-color: #F2F062;
-    }
+		.south {
+			background-color: #a9e6e6;
+		}
 
-    .south {
-      background-color: #A9E6E6;
-    }
-
-    .west {
-      background-color: #7692E4;
-    }
-  }
+		.west {
+			background-color: #7692e4;
+		}
+	}
 }
 
 #workshop-5-6 {
-  .left-margin {
-    margin-left: 2em;
-  }
+	.left-margin {
+		margin-left: 2em;
+	}
 }

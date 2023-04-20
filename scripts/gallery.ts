@@ -31,7 +31,7 @@ getImagesData().then(() => {
     return { ...image, id: index };
   });
   console.log(mappedArray);
-  
+
   let currentGif = 0;
 
   actualImg.setAttribute(`src`, mappedArray[currentGif].src);
@@ -66,7 +66,7 @@ getImagesData().then(() => {
     currentGif = (currentGif + 1) % mappedArray.length;
     loadPhoto(currentGif);
   });
-  
+
   leftP.addEventListener(`click`, () => {
     if (currentGif > 0) {
       currentGif--;
