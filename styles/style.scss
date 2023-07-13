@@ -1,4 +1,4 @@
-@use "reset";
+@use "reset" as *;
 
 #material-review-3 {
 	text-align: center;
@@ -21,7 +21,7 @@
 		margin: auto;
 		padding: 5px 4px;
 		border: thin #c0c0c0 solid;
-		display: flex;
+		@include flexbox();
 		flex-flow: column;
 		width: 50%;
 
@@ -79,12 +79,12 @@
 		padding: 1em;
 		box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
 		background-color: #ffffff80;
-		display: flex;
+		@include flexbox();
 		flex-direction: column;
 		gap: 1em;
 
 		article {
-			display: flex;
+			@include flexbox();
 			align-items: center;
 			place-content: space-around;
 
@@ -121,7 +121,7 @@
 		}
 
 		aside {
-			display: flex;
+			@include flexbox();
 			place-content: center;
 			align-items: center;
 			flex-wrap: wrap;

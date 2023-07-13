@@ -29,10 +29,19 @@
 
 <body>
 
+  <figure class="logo">
+    <a href="../index.html" title="To the index page.">
+      <img src="../images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
   <div>
     <header></header>
 
-    <main>
+    <main id="main">
       <section></section>
       <article>
         <address></address>
@@ -40,17 +49,17 @@
       <aside></aside>
     </main>
 
-    <footer></footer>
+    <footer>
+      <address class="©貂">
+        <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+          <picture>
+            <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+            <img src="../images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+          </picture>
+        </button>
+      </address>
+    </footer>
   </div>
-
-  <figure class="B__E--M">
-    <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
-      <picture>
-        <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
-        <img src="../images/copyright.png" alt="Copyright to Coding Sable" width="64px" height="64px" />
-      </picture>
-    </button>
-  </figure>
 
   <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
 </body>

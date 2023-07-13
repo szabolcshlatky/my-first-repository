@@ -30,11 +30,20 @@
 
 <body>
 
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
   <header>
     <h1>If you've got time and/or want to dig deeper, consider the following links</h1>
   </header>
 
-  <main>
+  <main id="main">
     <figure class="syntax">
       <img src="https://files.cdn.thinkific.com/file_uploads/410578/images/17c/ebf/ee6/1611606498743.jpg" alt="" />
       <figcaption>Összegyűjtöttünk nektek néhány linket, amelyek a későbbiekben hasznosak lehetnek:</figcaption>
@@ -448,14 +457,16 @@
     </figure>
   </main>
 
-  <figure class="B__E--M">
-    <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
-      <picture>
-        <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
-        <img src="images/copyright.png" alt="Copyright to Coding Sable" width="64px" height="64px" />
-      </picture>
-    </button>
-  </figure>
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
 
   <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
 
