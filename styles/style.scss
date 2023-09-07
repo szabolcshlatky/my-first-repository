@@ -36,34 +36,65 @@
 }
 
 #todo-list {
-	body {
-		background: #352f5b;
+	.clock {
+		background: #333;
+		margin: 200px auto;
+		color: yellow;
+		font-family: cursive;
+		font-weight: bolder;
+		font-size: 4em;
+		text-align: center;
 
-		.container {
-			width: 50%;
+		span {
+			padding: 20px;
+			background: #444;
 		}
+	}
 
-		input[type="text"],
-		input[type="text"]:focus {
-			color: #fff;
-			border: none;
-			background: rgba(0, 0, 0, 0.2);
-			width: 100%;
-		}
+	.popup-wrapper {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
 
-		.todos li {
-			background: #423a6f;
-			margin: 0.5em;
-			color: #fff;
-		}
+		.popup {
+			position: relative;
+			width: min(100%, 1000px);
+			margin: 10% auto;
+			padding: 20px;
+			background-color: #fff;
+			font-family: sans-serif;
+			text-align: center;
 
-		.delete {
-			cursor: pointer;
+			.popup-close {
+				position: absolute;
+				top: 5px;
+				right: 8px;
+				cursor: pointer;
+			}
 		}
+	}
 
-		.filtered {
-			display: none !important;
-		}
+	.popup-btn {
+		cursor: pointer;
+		color: #fff;
+		font-size: 16px;
+		background: crimson;
+		border: none;
+		padding: 6px 10px;
+		text-decoration: none;
+	}
+
+	.todosUl li {
+		list-style-type: none;
+		max-width: 200px;
+		margin: 8px auto;
+		border: 1px dotted #ddd;
+		padding: 8px;
+		background-color: #eee;
 	}
 }
 

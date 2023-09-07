@@ -1,80 +1,85 @@
-'use strict';
+`use strict`;
 
 const $ = (id) => document.getElementById(id);
 const $$ = (query) => document.querySelector(query);
 const $$$ = (jquery) => document.querySelectorAll(jquery);
 
-const addForm: HTMLFormElement = $$(`.add`) as HTMLFormElement;
-const list: HTMLUListElement = $$(`.todos`) as HTMLUListElement;
-const search: HTMLInputElement = $$(`.search input`) as HTMLInputElement;
+const popupBtn = $$(`.popup-btn`);
+const popup = $$(`.popup-wrapper`);
+const closeX = $$(`.popup-close`);
 
-const generateTemplate = (todo: string): void => {
-  const html = `
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      <span>${todo}</span>
-      <i class="far fa-trash-alt delete"></i>
-    </li>
+popupBtn.addEventListener(`click`, () => {
+  popup.style.display = `block`;
+});
+
+closeX.addEventListener(`click`, () => {
+  popup.style.display = `none`;
+});
+
+// OPTIONAL way that click anywhere the pop-up will be closed:
+
+popup.addEventListener(`click`, () => {
+  popup.style.display = `none`;
+});
+
+// CLOCK
+
+const clock = $$(`.clock`);
+
+const tick = () => {
+  const rightNow = new Date();
+  const h = rightNow.getHours();
+  const m = rightNow.getMinutes();
+  const s = rightNow.getSeconds();
+  
+  const htmlCLOCK = `
+    <span>${h}</span> : 
+    <span>${m}</span> : 
+    <span>${s}</span>
   `;
 
-  list.innerHTML += html;
+  clock.innerHTML = htmlCLOCK;
 };
 
-// Save & Load from localStorage API
+setInterval(tick, 1000);
 
-const saveTodos = (): void => {
-  const todos = Array.from(list.children).map(todo => todo.textContent);
-  localStorage.setItem('todos', JSON.stringify(todos));
-};
+// ToDo
 
-const loadTodos = (): void => {
-  const todos = JSON.parse(localStorage.getItem('todos') || '[]');
-  todos.forEach(todo => generateTemplate(todo));
-};
-
-// Add todos
-
-addForm.addEventListener(`submit`, (e: Event) => {
-  e.preventDefault();
-  const todo = (addForm.add as HTMLInputElement).value.trim();
-
-  console.log(todo);
-
-  if (todo.length) {
-    generateTemplate(todo);
-    addForm.reset();
-    saveTodos();
-  }
-});
-
-// Delete todos
-
-list.addEventListener(`click`, (e: Event) => {
-  if ((e.target as HTMLElement).classList.contains(`delete`)) {
-    (e.target as HTMLElement).parentElement?.remove();
-    saveTodos();
-  }
-});
-
-// Searching & filtering todos
-
-const filterTodos = (term: string): void => {
-  Array.from(list.children)
-    .filter((todo: Element) => !todo.textContent?.toLowerCase().includes(term))
-    .forEach((todo: Element) => todo.classList.add(`filtered`));
-
-  Array.from(list.children)
-    .filter((todo: Element) => todo.textContent?.toLowerCase().includes(term))
-    .forEach((todo: Element) => todo.classList.remove(`filtered`));
-};
-
-// Keyup event
-
-search.addEventListener(`keyup`, () => {
-  const term = search.value.trim().toLowerCase();
-  filterTodos(term);
-});
-
-// Retrieve and generate the saved todo list items on page load
-
-loadTodos();
-console.log(localStorage);
+  const todosBtn = $$(`.todosBtn`);
+  const todosLi = $$$(`.todosLi`);
+  const todosUl = $$(`.todoItems`);
+  const todoItems = $$$(`.todoItem`);
+  
+  todosBtn.addEventListener(`click`, () => {
+    console.log(`You clicked me`);
+    todosUl.innerHTML += `<li>Added with innerHTML</li>`;
+  
+    const somethingNew = document.createElement(`li`);
+    somethingNew.textContent = `Added with document.createElement() .append and .prepend`;
+    todosUl.prepend(somethingNew);
+  });
+  
+  todosLi.forEach(todoLi => {
+    todoLi.addEventListener(`click`, e => {
+      console.log(e);
+      console.log(`${todoLi.textContent} clicked `, e.target);
+      e.target.style.textDecoration = `line-through`;
+    });
+  });
+  
+  todoItems.forEach(item => {
+    item.addEventListener(`click`, e => {
+      console.log(`event in LI`);
+      e.stopPropagation();
+      e.target.remove();
+    });
+  });
+  
+  todosUl.addEventListener(`click`, e => {
+    console.log(`event in UL`);
+    console.log(e);
+  
+    if (e.target.tagName === `LI`) {
+      e.target.remove();
+    }
+  });

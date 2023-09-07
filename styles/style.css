@@ -337,29 +337,59 @@ button, input[type=button i], input[type=submit i], input[type=reset i] {
   text-align: center;
 }
 
-#todo-list body {
-  background: #352f5b;
+#todo-list .clock {
+  background: #333;
+  margin: 200px auto;
+  color: yellow;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: center;
 }
-#todo-list body .container {
-  width: 50%;
+#todo-list .clock span {
+  padding: 20px;
+  background: #444;
 }
-#todo-list body input[type=text],
-#todo-list body input[type=text]:focus {
-  color: #fff;
-  border: none;
-  background: rgba(0, 0, 0, 0.2);
+#todo-list .popup-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-#todo-list body .todos li {
-  background: #423a6f;
-  margin: 0.5em;
-  color: #fff;
+#todo-list .popup-wrapper .popup {
+  position: relative;
+  width: min(100%, 1000px);
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #fff;
+  font-family: sans-serif;
+  text-align: center;
 }
-#todo-list body .delete {
+#todo-list .popup-wrapper .popup .popup-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
   cursor: pointer;
 }
-#todo-list body .filtered {
-  display: none !important;
+#todo-list .popup-btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  background: crimson;
+  border: none;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+#todo-list .todosUl li {
+  list-style-type: none;
+  max-width: 200px;
+  margin: 8px auto;
+  border: 1px dotted #ddd;
+  padding: 8px;
+  background-color: #eee;
 }
 
 #my-first-app {
@@ -442,4 +472,4 @@ button, input[type=button i], input[type=submit i], input[type=reset i] {
   left: 33%;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22_reset.scss%22,%22style.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAwCA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACD;;;AAGD;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAEA;EACE;;;AAKN;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;;AAIJ;AC1VA;EACC;;AAEA;AAAA;AAAA;EAGC;;AAGD;EACC;;AAGD;EACC;;AAGD;EACC;EACA;EACA;EDLA;EACA;EACA;EACA;EACA;ECGA;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;;;AAMF;EACC;;AAEA;EACC;;AAGD;AAAA;EAEC;EACA;EACA;EACA;;AAGD;EACC;EACA;EACA;;AAGD;EACC;;AAGD;EACC;;;AAKH;EACC;EAGA;;AAEA;EACC;EACA;EACA;EACA;EACA;ED/DA;EACA;EACA;EACA;EACA;EC6DA;EACA;;AAEA;EDpEA;EACA;EACA;EACA;EACA;ECkEC;EACA;;AAEA;EACC;EACA;EACA;;AAEA;EACC;EACA;;AAIF;EACC;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;;AAMJ;EDzGA;EACA;EACA;EACA;EACA;ECuGC;EACA;EACA;;AAEA;EACC;EACA;EACA;;AAGD;EACC;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA%22,%22file%22:%22style.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22_reset.scss%22,%22style.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAwCA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACD;;;AAGD;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAEA;EACE;;;AAKN;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;;AAIJ;AC1VA;EACC;;AAEA;AAAA;AAAA;EAGC;;AAGD;EACC;;AAGD;EACC;;AAGD;EACC;EACA;EACA;EDLA;EACA;EACA;EACA;EACA;ECGA;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;;;AAMF;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;EACA;;AAIF;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;EACA;EACA;EACA;;AAKH;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;AAGD;EACC;EACA;EACA;EACA;EACA;EACA;;;AAIF;EACC;EAGA;;AAEA;EACC;EACA;EACA;EACA;EACA;ED9FA;EACA;EACA;EACA;EACA;EC4FA;EACA;;AAEA;EDnGA;EACA;EACA;EACA;EACA;ECiGC;EACA;;AAEA;EACC;EACA;EACA;;AAEA;EACC;EACA;;AAIF;EACC;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;;AAMJ;EDxIA;EACA;EACA;EACA;EACA;ECsIC;EACA;EACA;;AAEA;EACC;EACA;EACA;;AAGD;EACC;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA%22,%22file%22:%22style.css%22%7D */
