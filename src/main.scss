@@ -4,23 +4,75 @@
   /* Variables */
 }
 
-#workshop-3-1 {
+#workshop-3-2 {
   color: #222;
   font-family: sans-serif;
 
   header {
     position: relative;
-    width: 90%;
-    height: 60vh;
-    margin: 0 auto;
-    background: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png')
-      no-repeat center center;
-    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+    nav {
+      width: 100%;
+      position: fixed;
+      background-color: #222;
+      z-index: 2;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          margin: 1em;
+          list-style-type: none;
+
+          a {
+            color: #fff;
+            font-size: 1.25rem;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .container {
+      display: flex;
+      margin-top: 50px;
+
+      figure {
+        flex-grow: 1;
+        background-image: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+      }
+
+      .intro {
+        flex-grow: 2;
+        padding: 2em;
+        font-size: 1.25rem;
+
+        ul {
+          margin: 1em 0;
+          margin-left: 1em;
+        }
+
+        li {
+          margin-left: 2em;
+          list-style: square;
+        }
+      }
+    }
 
     h1 {
       position: absolute;
-      left: 20%;
-      bottom: 10%;
+      top: 45vh;
+      left: 10%;
       color: #222;
       font: normal normal 5rem/1 cursive;
 
@@ -33,10 +85,6 @@
   main {
     width: 60%;
     margin: 50px auto;
-
-    .intro {
-      font-size: 1.25rem;
-    }
 
     ul {
       margin: 1em 0;
