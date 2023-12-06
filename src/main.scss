@@ -4,26 +4,27 @@
   /* Variables */
 }
 
-#workshop-1-5 {
-  section {
-    width: 300px;
-    margin: 10px;
-    border: 5px solid #4285f4;
-    color: white;
-    font-family: cursive;
-    font-size: 24px;
-    text-align: center;
+#workshop-1-6 {
+  font-family: serif;
 
-    p {
-      padding: 10px 20px;
-    }
+  h1 {
+    color: red;
+  }
 
-    .north {
-      background-color: #e67676;
-    }
+  h2 {
+    color: purple;
+  }
 
-    .south {
-      background-color: #a9e6e6;
-    }
+  ul,
+  ol {
+    margin-left: 1em;
+  }
+
+  li {
+    margin-left: 2em;
+  }
+
+  .pink {
+    color: violet;
   }
 }
