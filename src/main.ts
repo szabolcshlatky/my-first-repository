@@ -3,108 +3,88 @@
 declare const $: any;
 import './main.scss';
 
-/* MŰVELETEK */
+/* Parancssor a böngészőben */
 
-console.log(4 + 5);
-console.log(3 * 5);
-console.log((4 - 1) * 2.2);
+console.log(64, 55 + 21, 44 / 2, 35 % `valami`);
 
-/* VÁLTOZÓK */
+/* Változók, Típusok és Kifejezések a JavaScript nyelvben */
 
-let azEnKorom = 28;
+let age = 28;
+let ww2 = 1945 - 1939;
+let tesla = 350 * 76;
+let secondsOfDay = 3600 * 24;
+let hungarians = 14000000;
+let bigger = 9597000 / 78871;
+let participants = 654 % 7;
 
-console.log(azEnKorom);
-console.log(azEnKorom / 2);
-console.log(azEnKorom % 15);
+console.log(age, ww2, tesla, secondsOfDay, hungarians, bigger, participants);
 
-let green_fox_kora = 5;
+let names = [`Hlatky`, `Eszter`, `Elizabet`];
+console.log(names[2].length);
 
-console.log(green_fox_kora ** 10);
+names.push(`Pocaklakó`);
+names[0] = `Szabolcs`;
 
-let azEnNevem = `Szabolcs`;
+console.log(names.length);
 
-console.log("Üdvözöllek," + " kedves " + azEnNevem);
-console.log(`${azEnNevem} nem ${green_fox_kora}, hanem ${azEnKorom} éves.`);
+let object = {
+  colors: [`orange`, `magenta`, `red`, `brown`, `green`, `blue`, `teal`],
+  hasManyColors: true,
+};
 
-/* TÖMBÖK */
+/* A JavaScript alapvető építőelemei */
 
-let nevek = [`Adam`, `Peter`, 34];
+let a = 7;
 
-console.log(nevek);
-
-/* FELTÉTELES ELÁGAZÁS */
-
-if (false) {
-  // Boolean érték
-  console.log(`A javascript is betöltött.`);
-} else if (true) {
-  // Boolean érték
-  console.clear();
-  console.log(`Ez itt a vége`);
+if (a < 5) {
+  console.log(a / 2);
+} else if (a <= 5) {
+  console.log(a * 2);
 } else {
-  console.log(`Igaz volt a feltétel`);
+  console.log(a - 6);
 }
 
-if (azEnKorom >= 21) {
-  // Összehasonlító operátorok: >, <, >=, <=, ==, ===
-  console.log(`Már elég idős ahhoz, hogy igyon egy sört.`);
-} else if (green_fox_kora > 18) {
-  console.log(`A másik is elég idős ahhoz, hogy igyon egy sört.`);
-} else {
-  console.clear();
+let bookCount = 10;
+
+for (let i = 0; i < bookCount; i++) {
+  console.log(i);
 }
 
-if (nevek[2] == `34`) {
-  console.log(`Mehet`);
+for (let i = 1; i <= bookCount; i++) {
+  console.log(i);
 }
 
-if (nevek[2] === `34`) {
-  console.log(`Nem megy.`);
+let count = 20;
+
+for (let i = 0; i <= count; i = i + 2) {
+  console.log(i);
 }
 
-/* DOM - jQuery */
-
-let szovegAzOldalon = $(`h1`).text();
-console.log(szovegAzOldalon);
-
-szovegAzOldalon = $(`h1`).text(`Ezt JS-ből változtattuk meg.`);
-console.log(szovegAzOldalon);
-
-/* TARTALOM */
-
-$(`p`).text(`alma`);
-$(`li`).html(`<strong>sza</strong>lma`);
-
-/* OSZTÁLY */
-
-$(`li:last-of-type`).toggleClass(`sarga`);
-
-/* STÍLUS */
-
-console.log($(`.sarga`).css(`background-color`));
-
-$(`.sarga`).css(`background-color`, `magenta`);
-$(`li`).css(`color`, `lime`);
-
-/* FÜGGVÉNY, ESEMÉNY */
-
-$(`#hozzaado`).click(function adjHozzaEgyLit() {
-  $(`ul`).append(`<li>ujabb elem</li>`);
-});
-
-$(`#torlo`).click(() => {
-  $(`li:first-of-type`).remove();
-});
-
-/* CIKLUSOK */
-
-for (let i = 0; i < 100; i++) {
-  $(`ul`).prepend(`<li>${i}. Nem csalok többet a vizsgán.</li>`);
+function printNumbersTill(n) {
+  for (let index = 1; index <= n; index++) {
+    console.log(index);
+  }
 }
 
-let szinek = [`orange`, `magenta`, `red`, `brown`, `green`, `blue`, `teal`];
+printNumbersTill(20);
+printNumbersTill(15);
 
-szinek.forEach(function (szin) {
-  $(`.kontener`).append(`<div class="doboz"></div>`);
-  $(`.kontener div:last-of-type`).css(`background-color`, szin);
+function getGreetingTo(namen) {
+  console.log(`Hello ${namen}!`);
+}
+
+getGreetingTo(`Mark`);
+
+let printValues = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+};
+
+printValues([0, 3, 6, 7, 9]);
+
+let myNumbers = [10, 20, 30, 50, 12];
+
+myNumbers.forEach((number) => {
+  console.log(number);
 });

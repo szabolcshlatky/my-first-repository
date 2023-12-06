@@ -4,26 +4,4 @@
   /* Variables */
 }
 
-#material-review-4 {
-  .kontener {
-    display: flex;
-
-    .doboz {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  ul {
-    margin-left: 1em;
-
-    li {
-      margin-left: 2em;
-      background-color: lightblue;
-    }
-
-    .sarga {
-      background-color: yellow;
-    }
-  }
-}
+/* _reset.scss mess up things but still I like it 🫤 */
