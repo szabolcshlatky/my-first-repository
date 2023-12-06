@@ -4,37 +4,82 @@
   /* Variables */
 }
 
-#material-review-3 {
-  text-align: center;
+#material-review-1 {
+  div {
+    padding: 10px 30px;
+    border-width: 1px 2px 3px 4px;
+    border-style: solid dashed dotted double;
+    border-color: white grey lightgray black;
+    background-color: orange;
+    font-family: sans-serif;
 
-  h4,
-  table,
-  ul {
-    padding: 1em;
+    h1 {
+      font-family: cursive;
+      font-size: 60px;
+      font-weight: 100;
+      text-align: center;
+    }
   }
 
-  hr {
-    margin: 2em;
+  h2 {
+    margin: 20px 300px 80px 300px;
+    font-family: serif;
+  }
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 100px;
+    padding: 40px;
+    background-color: blue;
+    color: lime;
+    font-family: sans-serif;
+  }
+
+  h4 {
+    height: 100px;
+    margin: 20px;
+  }
+
+  h5 {
+    color: #bc1288;
+  }
+
+  h6 {
+    color: rgb(230, 20, 150);
+  }
+
+  ul,
+  ol {
+    margin-left: 1em;
+    border-left: 2px solid gray;
   }
 
   li {
-    list-style-type: none;
+    margin-left: 2em;
+    border-left: 2px solid gray;
   }
 
-  .syntax {
-    margin: auto;
-    padding: 5px 4px;
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    width: 50%;
+  .citrom {
+    background-color: yellow;
+  }
 
-    figcaption {
-      background-color: #222;
-      color: #ccc;
-      font: italic smaller sans-serif;
-      padding: 3px 2px;
-      text-align: center;
+  .nagybetus {
+    font-size: 40px;
+  }
+
+  form {
+    width: 600px;
+    border: 2px solid white;
+    padding: 100px 60px 40px 20px;
+
+    input {
+      background-color: red;
+    }
+
+    #text {
+      background-color: pink;
     }
   }
 }
