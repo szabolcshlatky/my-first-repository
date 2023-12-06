@@ -4,16 +4,23 @@
   /* Variables */
 }
 
-#workshop-2-2 {
-  text-align: center;
+#workshop-2-3 {
+  font-family: sans-serif;
 
-  .img {
-    width: 300px;
-    margin: 50px;
+  main {
+    display: flex;
 
-    &:hover {
-      width: 400px;
-      margin: 0;
+    section {
+      width: 200px;
+      text-align: center;
+
+      img {
+        width: 150px;
+      }
+
+      a {
+        display: block;
+      }
     }
   }
 }
