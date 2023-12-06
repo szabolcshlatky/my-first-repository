@@ -4,31 +4,38 @@
   /* Variables */
 }
 
-#workshop-2-6 {
+#workshop-2-7 {
   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 50px;
+    width: 100%;
+    height: 70px;
+    border-bottom: 10px white solid;
+    padding-left: 100px;
     background-color: purple;
 
     .btn {
       display: block;
+      width: 50px;
       min-height: 30px;
       background-color: cyan;
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-right: 10px;
       cursor: pointer;
     }
 
     .large {
-      width: 60px;
+      width: 100px;
     }
   }
 
   main {
     display: flex;
     height: 500px;
+    margin: 0 100px;
 
     article {
       flex-grow: 4;
@@ -39,5 +46,11 @@
       flex-grow: 1;
       background-color: lime;
     }
+  }
+
+  footer {
+    margin: 10px 100px;
+    height: 80px;
+    background-color: lightgray;
   }
 }
