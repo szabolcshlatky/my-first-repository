@@ -4,23 +4,44 @@
   /* Variables */
 }
 
-#workshop-2-3 {
-  font-family: sans-serif;
+#workshop-2-4 {
+  .item {
+    width: 150px;
+    height: 150px;
+  }
 
-  main {
+  .green {
+    background-color: #51d400;
+  }
+
+  .yellow {
+    background-color: #ffd62a;
+  }
+
+  .purple {
+    background-color: #b02afe;
+  }
+
+  .flex {
     display: flex;
+    margin: 20px;
+  }
 
-    section {
-      width: 200px;
-      text-align: center;
+  .box__2 {
+    flex-direction: row-reverse;
+  }
 
-      img {
-        width: 150px;
-      }
+  .box__3 {
+    flex-flow: column-reverse;
+  }
 
-      a {
-        display: block;
-      }
-    }
+  .box__4 {
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .box__5 {
+    flex-flow: row-reverse wrap;
+    width: 300px;
   }
 }
