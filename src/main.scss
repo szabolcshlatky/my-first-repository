@@ -4,74 +4,14 @@
   /* Variables */
 }
 
-#workshop-1-1 {
-  body {
-    padding: 10px;
+#workshop-1-2 {
+  h1 {
+    padding: 20px;
+    background-color: red;
+  }
 
-    div {
-      display: inline-block;
-      margin: 10px;
-      padding: 5px;
-      border-radius: 10px;
-      border: 4px solid black;
-      background: yellow;
-    }
-
-    .first {
-      border: 4px solid red;
-    }
-
-    .second {
-      border: 4px solid #000000;
-    }
-
-    .lime {
-      div {
-        background-color: lime;
-      }
-    }
-
-    .white {
-      div {
-        background-color: lime;
-      }
-
-      .second {
-        background-color: white;
-      }
-    }
-
-    .blue {
-      div {
-        background-color: lime;
-      }
-
-      .second {
-        background-color: white;
-      }
-
-      .fourth {
-        border-color: blue;
-      }
-    }
-
-    .purple {
-      div {
-        background-color: lime;
-      }
-
-      .second {
-        background-color: white;
-      }
-
-      .fourth {
-        border-color: blue;
-      }
-
-      .fifth {
-        background-color: yellow;
-        border-color: purple;
-      }
-    }
+  h2 {
+    margin: 20px;
+    background-color: orange;
   }
 }
