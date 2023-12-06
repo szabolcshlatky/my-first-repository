@@ -6,82 +6,75 @@ const $ = (id) => document.getElementById(id);
 const $$ = (query) => document.querySelector(query);
 const $$$ = (jquery) => document.querySelectorAll(jquery);
 
-const popupBtn = $$(`.popup-btn`);
-const popup = $$(`.popup-wrapper`);
-const closeX = $$(`.popup-close`);
+const actualImg = $$(`.img__box--gif`);
+const description = $$(`.img__box--desc`);
+const leftP = $$(`.leftP`);
+const rightP = $$(`.rightP`);
+const buttons = $$$(`button`);
 
-popupBtn.addEventListener(`click`, () => {
-  popup.style.display = `block`;
-});
+let imagesArray = [];
 
-closeX.addEventListener(`click`, () => {
-  popup.style.display = `none`;
-});
-
-// OPTIONAL way that click anywhere the pop-up will be closed:
-
-popup.addEventListener(`click`, () => {
-  popup.style.display = `none`;
-});
-
-// CLOCK
-
-const clock = $$(`.clock`);
-
-const tick = () => {
-  const rightNow = new Date();
-  const h = rightNow.getHours();
-  const m = rightNow.getMinutes();
-  const s = rightNow.getSeconds();
-
-  const htmlCLOCK = `
-    <span>${h}</span> : 
-    <span>${m}</span> : 
-    <span>${s}</span>
-  `;
-
-  clock.innerHTML = htmlCLOCK;
+const getImagesData = async () => {
+  try {
+    const response = await fetch('./scripts/images.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    imagesArray = data.images;
+    return imagesArray;
+  } catch (error) {
+    console.error(`Error fetching data: ${error}`);
+  }
 };
 
-setInterval(tick, 1000);
-
-// ToDo
-
-const todosBtn = $$(`.todosBtn`);
-const todosLi = $$$(`.todosLi`);
-const todosUl = $$(`.todoItems`);
-const todoItems = $$$(`.todoItem`);
-
-todosBtn.addEventListener(`click`, () => {
-  console.log(`You clicked me`);
-  todosUl.innerHTML += `<li>Added with innerHTML</li>`;
-
-  const somethingNew = document.createElement(`li`);
-  somethingNew.textContent = `Added with document.createElement() .append and .prepend`;
-  todosUl.prepend(somethingNew);
-});
-
-todosLi.forEach(todoLi => {
-  todoLi.addEventListener(`click`, e => {
-    console.log(e);
-    console.log(`${todoLi.textContent} clicked `, e.target);
-    e.target.style.textDecoration = `line-through`;
+getImagesData().then(() => {
+  const mappedArray = imagesArray.map((image, index) => {
+    return { ...image, id: index };
   });
-});
+  console.log(mappedArray);
 
-todoItems.forEach(item => {
-  item.addEventListener(`click`, e => {
-    console.log(`event in LI`);
-    e.stopPropagation();
-    e.target.remove();
+  let currentGif = 0;
+
+  actualImg.setAttribute(`src`, mappedArray[currentGif].src);
+  actualImg.setAttribute(`alt`, mappedArray[currentGif].alt);
+  description.innerHTML = mappedArray[currentGif].alt;
+
+  let loadPhoto = photoNumber => {
+    actualImg.setAttribute(`src`, mappedArray[photoNumber].src);
+    actualImg.setAttribute(`alt`, mappedArray[photoNumber].alt);
+    description.innerHTML = mappedArray[photoNumber].alt;
+
+    buttons.forEach((btn, i) => {
+      if (i !== photoNumber) {
+        btn.classList.remove(`clicked`);
+      } else {
+        btn.classList.add(`clicked`);
+      }
+    });
+  };
+
+  buttons.forEach((button, index) => {
+    button.setAttribute(`data-number`, index);
+    button.innerHTML = `<img src="${mappedArray[index].src}" alt="${mappedArray[index].alt}" />`;
+
+    button.addEventListener(`click`, () => {
+      currentGif = index;
+      loadPhoto(currentGif);
+    });
   });
-});
 
-todosUl.addEventListener(`click`, e => {
-  console.log(`event in UL`);
-  console.log(e);
+  rightP.addEventListener('click', () => {
+    currentGif = (currentGif + 1) % mappedArray.length;
+    loadPhoto(currentGif);
+  });
 
-  if (e.target.tagName === `LI`) {
-    e.target.remove();
-  }
+  leftP.addEventListener(`click`, () => {
+    if (currentGif > 0) {
+      currentGif--;
+    } else {
+      currentGif = mappedArray.length - 1;
+    }
+    loadPhoto(currentGif);
+  });
 });

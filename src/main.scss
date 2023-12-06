@@ -4,65 +4,81 @@
   /* Variables */
 }
 
-#todo-list {
-  .clock {
-    background: #333;
-    margin: 200px auto;
-    color: yellow;
-    font-family: cursive;
-    font-weight: bolder;
-    font-size: 4em;
-    text-align: center;
+#my-first-app {
+  background: fixed url('https://www.technokrata.hu/uploads/2020/04/Green-Fox-Academy.jpg') no-repeat center center;
+  font-family: cursive;
 
-    span {
-      padding: 20px;
-      background: #444;
-    }
-  }
+  main {
+    width: 60%;
+    margin: 5vw auto;
+    padding: 1em;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff80;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 
-  .popup-wrapper {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    article {
+      display: flex;
+      align-items: center;
+      place-content: space-around;
 
-    .popup {
-      position: relative;
-      width: min(100%, 1000px);
-      margin: 10% auto;
-      padding: 20px;
-      background-color: #fff;
-      font-family: sans-serif;
-      text-align: center;
-
-      .popup-close {
-        position: absolute;
-        top: 5px;
-        right: 8px;
+      p {
         cursor: pointer;
+        font-size: clamp(2rem, 5vw, 5rem);
+        margin: 1em;
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.5);
+          transition: 0.5s;
+        }
+      }
+
+      figure {
+        position: relative;
+        box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.5);
+
+        figcaption {
+          display: block;
+          width: 100%;
+          padding: 1em;
+          position: absolute;
+          bottom: 1%;
+          left: 0;
+          background-color: #00000080;
+          color: #fff;
+
+          p {
+            font-size: clamp(1rem, 1.25vw, 1.25rem);
+          }
+        }
       }
     }
-  }
 
-  .popup-btn {
-    cursor: pointer;
-    color: #fff;
-    font-size: 16px;
-    background: crimson;
-    border: none;
-    padding: 6px 10px;
-    text-decoration: none;
-  }
+    aside {
+      display: flex;
+      place-content: center;
+      align-items: center;
+      flex-wrap: wrap;
 
-  .todosUl li {
-    list-style-type: none;
-    max-width: 200px;
-    margin: 8px auto;
-    border: 1px dotted #ddd;
-    padding: 8px;
-    background-color: #eee;
+      .btn {
+        width: 64px;
+        height: 64px;
+        margin: 0.1em;
+      }
+
+      .clicked {
+        position: relative;
+        outline: solid 5px lightblue;
+
+        &::before {
+          content: '🔼';
+          font-size: 1rem;
+          position: absolute;
+          top: -20%;
+          left: 33%;
+        }
+      }
+    }
   }
 }

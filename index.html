@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-HU" dir="ltr" id="todo-list">
+<html lang="en-HU" dir="ltr" id="my-first-app">
 
 <head>
   <meta charset="UTF-8" />
@@ -26,14 +26,7 @@
   <meta name="audience" content="all" />
   <!-- <meta name="theme-color" content="#000000" /> -->
 
-  <title>Workshop 5/10 - ToDo lista</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Gallery</title>
 
   <link rel="icon" href="/assets/images/favicon.ico" />
   <link rel="apple-touch-icon" href="/assets/images/favicon.ico" />
@@ -126,66 +119,44 @@
     </figcaption>
   </figure>
 
-  <main class="container" id="main">
+  <main id="main">
+    <article>
+      <p class="leftP">
+      </p>
+      <figure class="img__box">
+        <img class="img__box--gif" src="" alt="" />
+        <figcaption class="img__box--desc"></figcaption>
+      </figure>
+      <p class="rightP">></p>
+    </article>
+    <aside>
+      <button type="button" title="thumbnail0"></button>
+      <button type="button" title="thumbnail1"></button>
+      <button type="button" title="thumbnail2"></button>
+      <button type="button" title="thumbnail3"></button>
+      <button type="button" title="thumbnail4"></button>
+      <button type="button" title="thumbnail5"></button>
+      <button type="button" title="thumbnail6"></button>
+      <button type="button" title="thumbnail7"></button>
+      <button type="button" title="thumbnail8"></button>
+      <button type="button" title="thumbnail9"></button>
+      <button type="button" title="thumbnail10"></button>
+      <button type="button" title="thumbnail11"></button>
+    </aside>
+  </main>
 
-    <header>
-      <h1>Digital Clock PopUp and ToDo list</h1>
-    </header>
-    <main class="popup-wrapper" id="main">
-      <section class="popup">
-        <aside class="popup-close">× (accept 🍪)</aside>
-        <article class="popup-content">
-          <h2>GDPR</h2>
-          <div class="clock">
+  <figure class="©貂">
+    <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+      <picture>
+        <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+        <img src="/assets/images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+      </picture>
+    </button>
+  </figure>
 
-          </div>
-          <a href="#" target="_blank" title="Opens in new tab" aria-label="policy content page">Details</a>
-        </article>
-      </section>
-    </main>
+  <script type="module" src="/src/main.ts" defer></script>
 
-    <button class="popup-btn">click me</button>
-
-    <footer>
-      <h5>Todos</h5>
-      <ul class="todosUl">
-        <li class="todosLi">buy milk</li>
-        <li class="todosLi">read a book</li>
-        <li class="todosLi">play the guitar</li>
-        <li class="todosLi">pay the bills :(</li>
-      </ul>
-      <ul class="todoItems">
-        <li class="todoItem">Todo item 1</li>
-        <li class="todoItem">Todo item 2</li>
-        <li class="todoItem">Todo item 3</li>
-        <li class="todoItem">Todo item 4</li>
-      </ul>
-
-      <button class="todosBtn">add new todo</button>
-    </footer>
-
-    <figure class="©貂">
-      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
-        <picture>
-          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
-          <img src="/assets/images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
-        </picture>
-      </button>
-    </figure>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
-      defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.min.js"
-      integrity="sha512-0kon+2zxkK5yhflwFqaTaIhLVDKGVH0YH/jm8P8Bab/4EOgC/n7gWyy7WE4EXrfPOVDeNdaebiAng0nsfeFd9A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-
-    <script type="module" src="/src/main.ts" defer></script>
-
-    <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
 </body>
 
 </html>
