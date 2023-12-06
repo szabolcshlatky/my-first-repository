@@ -4,44 +4,44 @@
   /* Variables */
 }
 
-#workshop-2-4 {
-  .item {
-    width: 150px;
-    height: 150px;
-  }
-
-  .green {
-    background-color: #51d400;
-  }
-
-  .yellow {
-    background-color: #ffd62a;
-  }
-
-  .purple {
-    background-color: #b02afe;
-  }
-
+#workshop-2-5 {
   .flex {
     display: flex;
-    margin: 20px;
+    width: 400px;
+    height: 150px;
+    margin: 5px;
+    background-color: #ffd62a;
+
+    .item {
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      margin-right: 5px;
+      background-color: #b02afe;
+      list-style-type: none;
+    }
   }
 
   .box__2 {
-    flex-direction: row-reverse;
+    align-items: center;
   }
 
   .box__3 {
-    flex-flow: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+      margin: 0;
+    }
   }
 
   .box__4 {
-    flex-wrap: wrap;
-    width: 300px;
-  }
+    flex-direction: row-reverse;
+    align-items: flex-end;
 
-  .box__5 {
-    flex-flow: row-reverse wrap;
-    width: 300px;
+    .item {
+      margin: 0;
+      margin-left: 5px;
+    }
   }
 }
