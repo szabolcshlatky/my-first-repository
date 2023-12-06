@@ -4,50 +4,93 @@
   /* Variables */
 }
 
-#workshop-2-8 {
-  div {
-    width: 80%;
-    margin: 0 auto;
-  }
+#workshop-3-1 {
+  color: #222;
+  font-family: sans-serif;
 
   header {
-    height: 20vh;
-    background-color: aqua;
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    background: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png')
+      no-repeat center center;
+    background-size: cover;
+
+    h1 {
+      position: absolute;
+      left: 20%;
+      bottom: 10%;
+      color: #222;
+      font: normal normal 5rem/1 cursive;
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
   }
 
   main {
-    display: flex;
-    height: 70vh;
+    width: 60%;
+    margin: 50px auto;
 
-    section {
-      flex-grow: 1;
-      background-color: orange;
+    .intro {
+      font-size: 1.25rem;
     }
 
-    article {
-      position: relative;
-      flex-grow: 3;
-      margin: 0 50px;
-      background-color: red;
+    ul {
+      margin: 1em 0;
+      margin-left: 1em;
+    }
 
-      address {
-        position: absolute;
-        right: 5%;
-        bottom: 5%;
-        width: 50px;
-        height: 50px;
-        background-color: black;
+    li {
+      margin-left: 2em;
+      list-style: square;
+    }
+
+    section {
+      padding: 2em;
+
+      h2 {
+        text-transform: uppercase;
+      }
+
+      article {
+        margin: 2em 0;
+
+        h3 {
+          line-height: 1;
+
+          em {
+            font-family: serif;
+            font-size: 15px;
+            font-style: italic;
+          }
+        }
       }
     }
 
-    aside {
-      flex-grow: 1;
-      background-color: purple;
-    }
-  }
+    blockquote {
+      position: relative;
+      padding: 1em;
+      padding-right: 2em;
+      background-color: #222;
+      color: #fff;
+      font-family: cursive;
+      font-size: 3rem;
 
-  footer {
-    height: 10vh;
-    background-color: blue;
+      &::before {
+        content: '”';
+        position: absolute;
+        top: -25px;
+        left: 1%;
+        color: #fff;
+        font-size: 5rem;
+      }
+    }
+
+    hr {
+      border: 2px solid #222;
+    }
   }
 }
