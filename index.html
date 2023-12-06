@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-HU" dir="ltr" id="workshop-1-8">
+<html lang="en-HU" dir="ltr" id="material-review-2">
 
 <head>
 
@@ -123,63 +123,49 @@
     </figcaption>
   </figure>
 
-  <form action="" method="get" id="main">
+  <div class="container" id="main">
+    <h1>Awesome Landing Page</h1>
 
-    <fieldset>
-      <legend>Interesting application form 🙄</legend>
+    <div id="card-holder">
+      <div class="card">
+        <img src="https://github.com/green-fox-academy/myfirstapp-syllabus/blob/master/assets/tree.png?raw=true"
+          alt="" />
+        <h3>Plant trees</h3>
+      </div>
 
-      <fieldset>
-        <legend>
-          <label for="name">What is your name?</label>
-        </legend>
-        <input type="text" name="name" id="name" />
-      </fieldset>
+      <div class="card">
+        <img src="https://github.com/green-fox-academy/myfirstapp-syllabus/blob/master/assets/deal.png?raw=true"
+          alt="" />
+        <h3>Make friends</h3>
+      </div>
 
-      <fieldset>
-        <legend>What is your favorite color?</legend>
+      <div class="card">
+        <img src="https://github.com/green-fox-academy/myfirstapp-syllabus/blob/master/assets/money.png?raw=true"
+          alt="" />
+        <h3>Profit</h3>
+      </div>
+    </div>
 
-        <input type="checkbox" name="red" id="red" />
-        <label for="red">Red</label>
-        <br />
-        <input type="checkbox" name="green" id="green" />
-        <label for="green">Green</label>
-        <br />
-        <input type="checkbox" name="blue" id="blue" />
-        <label for="blue">Blue</label>
-        <br />
-        <input type="checkbox" name="other" id="other" />
-        <label for="other">Other
-          <input type="color" name="color" id="color" />
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <p>Sign up to our newsletter to recieve awesome news about fresh air.</p>
+      <form action="" method="post">
+        <label for="email">email
+          <input type="email" name="email" id="email" />
         </label>
-      </fieldset>
+        <button class="btn" type="submit">Subscribe</button>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">I accept the <a href="#">terms and conditions</a>.</label>
+      </form>
+      <div id="closex">
+        x
+      </div>
+    </div>
 
-      <fieldset>
-        <legend>Would you like to become a developer?</legend>
-
-        <input type="radio" name="radio" id="yes" />
-        <label for="yes">Yes</label>
-        <br />
-        <input type="radio" name="radio" id="ano" />
-        <label for="ano">Ano</label>
-        <br />
-        <input type="radio" name="radio" id="igen" />
-        <label for="igen">Igen</label>
-        <br />
-        <input type="radio" name="radio" id="chinese" />
-        <label for="chinese">是的</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>
-          <label for="textarea">Why would you like to become a developer?</label>
-        </legend>
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-      </fieldset>
-
-      <input type="submit" value="Submit" />
-    </fieldset>
-
-  </form>
+    <div id="questionmark">
+      ?
+    </div>
+  </div>
 
   <figure class="©貂">
     <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
