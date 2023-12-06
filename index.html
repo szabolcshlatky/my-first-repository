@@ -19,23 +19,107 @@
   <meta name="generator" content="Visual Studio Code" />
   <meta name="distribution" content="global" />
   <meta name="revised" content="Ictys, 2023/01/01" />
+  <meta name="revisit-after" content="366 days" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="Hunglish" />
+  <meta name="coverage" content="Worldwide" />
+  <meta name="target" content="all" />
+  <meta name="audience" content="all" />
+  <!-- <meta name="theme-color" content="#000000" /> -->
 
   <title>Material Review #3 - Hasznos linkek</title>
 
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="apple-touch-icon" href="images/favicon.ico" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/images/favicon.ico" />
 
+  <style>
+    .logo img,
+    .©貂 img {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .logo button,
+    .©貂 button {
+      display: inline-block;
+      min-width: 44px;
+      min-height: 44px;
+      border: none;
+      font-size: clamp(1rem, 1.25vw, 1.25rem);
+      line-height: 1.5;
+      background: none;
+      cursor: pointer;
+    }
+
+    .logo a:link,
+    .©貂 a:visited {
+      color: (internal value);
+      text-decoration: .5px dashed underline;
+      cursor: pointer;
+    }
+
+    .logo a:link:active,
+    .©貂 a:visited:active {
+      color: (internal value);
+    }
+
+    .logo {
+      position: fixed;
+      top: 1%;
+      left: 1%;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .logo a {
+      display: inline-block;
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+
+    .logo a:hover {
+      opacity: 1;
+    }
+
+    .logo button {
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+
+    .logo button:hover {
+      opacity: 1;
+    }
+
+    .©貂 {
+      position: fixed;
+      bottom: 1%;
+      right: 1%;
+      z-index: 9999;
+      font-style: normal;
+      opacity: 0.5;
+      transition: 1s;
+    }
+
+    .©貂:hover {
+      opacity: 1;
+      scale: 1.2;
+      transform: rotateZ(-90deg);
+    }
+  </style>
 </head>
 
 <body>
 
   <figure class="logo">
     <a href="index.html" title="To the index page.">
-      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+      <img src="/assets/images/logo.svg" alt="logo" width="64px" height="64px" />
     </a>
     <figcaption>
-      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">
+        About
+      </button>
     </figcaption>
   </figure>
 
@@ -457,19 +541,21 @@
     </figure>
   </main>
 
-  <footer>
-    <address class="©貂">
-      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
-        <picture>
-          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
-          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
-        </picture>
-      </button>
-    </address>
-  </footer>
+  <figure class="©貂">
+    <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+      <picture>
+        <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+        <img src="/assets/images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+      </picture>
+    </button>
+  </figure>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.js"
+    integrity="sha512-EU2b7yz3VY5AnwdmaBFaga05r7fP3L8tzmw1HyVKgPgua+a98xiYb3UQH4pPIK/hj1QdU2xhOQt6Cgg4O4fO7Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script type="module" src="/src/main.ts" defer></script>
 
   <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
-
 </body>
 
 </html>
