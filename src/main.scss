@@ -4,44 +4,40 @@
   /* Variables */
 }
 
-#workshop-2-5 {
-  .flex {
+#workshop-2-6 {
+  nav {
     display: flex;
-    width: 400px;
-    height: 150px;
-    margin: 5px;
-    background-color: #ffd62a;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: purple;
 
-    .item {
-      width: 50px;
-      height: 50px;
-      margin: 0;
-      margin-right: 5px;
-      background-color: #b02afe;
-      list-style-type: none;
+    .btn {
+      display: block;
+      min-height: 30px;
+      background-color: cyan;
+      margin-left: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .large {
+      width: 60px;
     }
   }
 
-  .box__2 {
-    align-items: center;
-  }
+  main {
+    display: flex;
+    height: 500px;
 
-  .box__3 {
-    justify-content: space-between;
-    align-items: center;
-
-    .item {
-      margin: 0;
+    article {
+      flex-grow: 4;
+      background-color: yellow;
     }
-  }
 
-  .box__4 {
-    flex-direction: row-reverse;
-    align-items: flex-end;
-
-    .item {
-      margin: 0;
-      margin-left: 5px;
+    aside {
+      flex-grow: 1;
+      background-color: lime;
     }
   }
 }
