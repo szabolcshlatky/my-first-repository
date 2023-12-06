@@ -4,82 +4,74 @@
   /* Variables */
 }
 
-#material-review-1 {
-  div {
-    padding: 10px 30px;
-    border-width: 1px 2px 3px 4px;
-    border-style: solid dashed dotted double;
-    border-color: white grey lightgray black;
-    background-color: orange;
-    font-family: sans-serif;
+#workshop-1-1 {
+  body {
+    padding: 10px;
 
-    h1 {
-      font-family: cursive;
-      font-size: 60px;
-      font-weight: 100;
-      text-align: center;
-    }
-  }
-
-  h2 {
-    margin: 20px 300px 80px 300px;
-    font-family: serif;
-  }
-
-  h3 {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 100px;
-    padding: 40px;
-    background-color: blue;
-    color: lime;
-    font-family: sans-serif;
-  }
-
-  h4 {
-    height: 100px;
-    margin: 20px;
-  }
-
-  h5 {
-    color: #bc1288;
-  }
-
-  h6 {
-    color: rgb(230, 20, 150);
-  }
-
-  ul,
-  ol {
-    margin-left: 1em;
-    border-left: 2px solid gray;
-  }
-
-  li {
-    margin-left: 2em;
-    border-left: 2px solid gray;
-  }
-
-  .citrom {
-    background-color: yellow;
-  }
-
-  .nagybetus {
-    font-size: 40px;
-  }
-
-  form {
-    width: 600px;
-    border: 2px solid white;
-    padding: 100px 60px 40px 20px;
-
-    input {
-      background-color: red;
+    div {
+      display: inline-block;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 10px;
+      border: 4px solid black;
+      background: yellow;
     }
 
-    #text {
-      background-color: pink;
+    .first {
+      border: 4px solid red;
+    }
+
+    .second {
+      border: 4px solid #000000;
+    }
+
+    .lime {
+      div {
+        background-color: lime;
+      }
+    }
+
+    .white {
+      div {
+        background-color: lime;
+      }
+
+      .second {
+        background-color: white;
+      }
+    }
+
+    .blue {
+      div {
+        background-color: lime;
+      }
+
+      .second {
+        background-color: white;
+      }
+
+      .fourth {
+        border-color: blue;
+      }
+    }
+
+    .purple {
+      div {
+        background-color: lime;
+      }
+
+      .second {
+        background-color: white;
+      }
+
+      .fourth {
+        border-color: blue;
+      }
+
+      .fifth {
+        background-color: yellow;
+        border-color: purple;
+      }
     }
   }
 }
