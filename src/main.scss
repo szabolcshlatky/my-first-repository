@@ -4,32 +4,15 @@
   /* Variables */
 }
 
-#workshop-1-7 {
+#workshop-1-8 {
   font-family: cursive;
-  font-size: 24px;
 
   form {
-    margin: 10px;
-  }
+    width: 50%;
+    margin: 0 auto;
 
-  input,
-  label {
-    display: block;
-  }
-
-  input {
-    margin-bottom: 20px;
-    border: 2px limegreen solid;
-    border-radius: 5px;
-    padding: 10px 20px;
-  }
-
-  .btn {
-    border: none;
-    border-radius: 50px;
-    padding: 20px;
-    background-color: limegreen;
-    font-family: cursive;
-    font-size: 24px;
+    fieldset {
+      padding: 5px 10px;
+    }
   }
 }
