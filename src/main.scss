@@ -4,33 +4,26 @@
   /* Variables */
 }
 
-#workshop-4-3 {
-  section {
+#material-review-4 {
+  .kontener {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin: 30px;
-    border: 1px solid blue;
-    padding: 30px;
 
-    div {
+    .doboz {
       width: 100px;
       height: 100px;
     }
   }
 
-  .flexbox__1 {
-    div {
-      background-color: blue;
+  ul {
+    margin-left: 1em;
+
+    li {
+      margin-left: 2em;
+      background-color: lightblue;
     }
-  }
 
-  .flexbox__2 {
-    background-color: orange;
-
-    div {
-      background-color: purple;
+    .sarga {
+      background-color: yellow;
     }
   }
 }
